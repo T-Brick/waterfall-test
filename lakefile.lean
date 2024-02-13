@@ -10,3 +10,6 @@ lean_lib «WaterfallTest» where
 @[default_target]
 lean_exe «waterfall-test» where
   root := `Main
+
+require waterfall from
+  git "https://github.com/JamesGallicchio/waterfall" @ "test-dependency"
